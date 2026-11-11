@@ -20,10 +20,10 @@ void task_2(void)
 
   if(!led)
   {
-    PORTD |= (1 << PORTD6);
-    PORTD &= ~(1 << PORTD7);
+    PORTD |= (1 << PD6);
+    PORTD &= ~(1 << PD7);
   } else {
-    PORTD &= ~(1 << PORTD6);
-    PORTD |= (1 << PORTD7);
+    PORTD &= ~(1 << PD6);
+    PORTD |= (1 << PD7);
   }
 }

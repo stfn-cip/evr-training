@@ -1,12 +1,14 @@
 #include "task1.h"
 #include "task2.h"
+#include "task3.h"
 
 volatile uint32_t i = 0;
 
 void setup() {
-  DDRD = (1 << DDD5) | (1 << DDD4) | (1 << DDD3) | (1 << DDD6) | (1 << DDD7);
-  DDRB &= ~(1 << DDB0);
-  PORTB |= (1 << PORTB0);
+  DDRD = (1U << PD5) | (1U << PD4) | (1U << PD3) | (1U << PD6) | (1U << PD7);
+  DDRB &= ~(1 << PB0);
+  PORTB |= (1 << PB0);
+  task_3_setup();
   Serial.begin(9600);
 }
 
