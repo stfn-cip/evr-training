@@ -12,8 +12,6 @@ void task_3_setup(void)
   EICRA = (EICRA | (1 << ISC01)) & ~(1 << ISC00); //falling edge
 
   EIMSK |= (1 << INT0);
-
-  sei();
 }
 
 ISR(INT0_vect)

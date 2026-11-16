@@ -9,6 +9,10 @@ void setup() {
   DDRB &= ~(1 << PB0);
   PORTB |= (1 << PB0);
   task_3_setup();
+  task_1_setup();
+
+  sei();
+  
   Serial.begin(9600);
 }
 
