@@ -2,6 +2,7 @@
 #include "task2.h"
 #include "task3.h"
 #include "task5.h"
+#include "task6.h"
 
 volatile uint32_t i = 0;
 
@@ -12,6 +13,7 @@ void setup() {
   task_3_setup();
   task_1_setup();
   task_5_setup();
+  task_6_setup();
 
   sei();
   
@@ -21,4 +23,5 @@ void setup() {
 void loop() {
   task_1();
   task_2();
+  task_6();
 }
